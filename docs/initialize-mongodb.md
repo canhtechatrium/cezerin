@@ -15,7 +15,6 @@ db.pages.insertMany([
   {slug: '', meta_title: 'Home', enabled: true, is_system: true},
   {slug: 'checkout', meta_title: 'Checkout', enabled: true, is_system: true},
   {slug: 'checkout-success', meta_title: 'Thank You!', enabled: true, is_system: true},
-  {slug: 'cart', meta_title: 'Cart', enabled: true, is_system: true},
   {slug: 'login', meta_title: 'Login', enabled: true, is_system: true},
   {slug: 'logout', meta_title: 'Logout', enabled: true, is_system: true},
   {slug: 'register', meta_title: 'Register', enabled: true, is_system: true},
@@ -31,7 +30,7 @@ db.tokens.insert({
   date_created: new Date(),
   expiration: 72,
   name: 'Owner',
-  email: 'email@domain.com',
+  email: 'canh.ph@techatrium.com',
   scopes: ['admin']  
 });
 ```
@@ -40,12 +39,12 @@ db.tokens.insert({
 
 ```js
 db.emailSettings.insert({
-  host: 'smtp.domain.com',
+  host: 'smtp.gmail.com',
   port: 465,
-  user: '',
-  pass: '',
+  user: 'canh.example@gmail.com',
+  pass: 'asdf@1234',
   from_name: 'Store',
-  from_address: 'email@domain.com'
+  from_address: 'canh.example@gmail.com'
 });
 ```
 
@@ -54,11 +53,11 @@ db.emailSettings.insert({
 ```js
 db.settings.insert({
   domain: 'http://localhost:3000',
-  logo_file: null,
+  logo_file: 'logo.png',
   language: 'en',
-  currency_code: 'USD',
-  currency_symbol: '$',
-  currency_format: '${amount}',
+  currency_code: 'VND',
+  currency_symbol: 'VND',
+  currency_format: '{amount} VND',
   thousand_separator: ',',
   decimal_separator: '.',
   decimal_number: 2,
