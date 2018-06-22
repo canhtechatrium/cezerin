@@ -7,7 +7,7 @@ import * as helper from '../lib/helper'
 const renderItem = item => (
   <div className="image-gallery-image">
     <NavLink to={item.path || ''}>
-      <img src={item.original} alt={item.title} />
+      <div className="image-container" style={{ backgroundImage: 'url(' + item.original + ')' }}></div>
       <div className="caption" style={{ color: themeSettings.home_slider_color || '#fff' }}>
         <div className="caption-title">{item.title}</div>
         <div className="caption-description">{item.description}</div>
