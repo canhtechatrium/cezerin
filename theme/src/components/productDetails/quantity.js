@@ -47,12 +47,7 @@ export default class Quantity extends React.PureComponent {
 
     return (
       <Fragment>
-        <div>{text.qty}</div>
-        <div className="product-quantity">
-          <a className="decrement" onClick={this.decrement}></a>
-          <input value={value} onChange={this.handleChange} maxLength="3" type="number" pattern="\d*" disabled={disabled} />
-          <a className="increment" onClick={this.increment}></a>
-        </div>
+        <div></div>
       </Fragment>
     )
   }

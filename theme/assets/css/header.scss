@@ -15,7 +15,7 @@ header {
 .logo-image img {
   max-height: 55px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: block;
 }
 
@@ -300,5 +300,15 @@ body.search-active .mobile-nav {
 
   .search-input {
     height: 2rem;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .is-0-desktop-force {
+    width: 0 !important;
+  }
+
+  .is-8-desktop-force {
+    width: 66.66% !important;
   }
 }

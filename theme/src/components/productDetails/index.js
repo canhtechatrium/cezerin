@@ -127,31 +127,26 @@ export default class ProductDetails extends React.Component {
 
                     <Options options={product.options} onChange={this.onOptionChange} />
                     <Quantity maxQuantity={maxQuantity} onChange={this.setQuantity} />
-                    <div className="button-addtocart">
-                      <AddToCartButton product={product} variant={selectedVariant} addCartItem={this.addToCart} isAllOptionsSelected={isAllOptionsSelected} />
-                    </div>
-
+                    <section className="section section-product-description">
+                      <div className="container">
+                        <div className="content">
+                          <div className="row">
+                              <Description description={product.description} />
+                          </div>
+                          <div className="row">
+                              <br />
+                              <p>Quy định:</p>
+                              <p>Tất cả khách ôm lô là trộn mẫu, chọn mẫu &#43; 2K. Hoặc không cho chọn</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-
-          <section className="section section-product-description">
-            <div className="container">
-              <div className="content">
-                <div className="columns">
-                  <div className="column is-7">
-                    <Description description={product.description} />
-                  </div>
-                  <div className="column is-5">
-                    <Attributes attributes={product.attributes} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
           <RelatedProducts
             settings={settings}
