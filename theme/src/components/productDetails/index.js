@@ -130,12 +130,16 @@ export default class ProductDetails extends React.Component {
                     <section className="section section-product-description">
                       <div className="container">
                         <div className="content">
+                          <h2><b>Quy cách</b></h2>
                           <div className="row">
                               <Description description={product.description} />
                           </div>
                           <div className="row">
+                              <Description description={product.description2} />
+                          </div>
+                          <div className="row">
                               <br />
-                              <p>Quy định:</p>
+                              <span><b>Quy định:</b></span>
                               <p>Tất cả khách ôm lô là trộn mẫu, chọn mẫu &#43; 2K. Hoặc không cho chọn</p>
                           </div>
                         </div>

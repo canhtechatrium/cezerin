@@ -591,6 +591,7 @@ class ProductsService {
 
     product.name = parse.getString(data.name);
     product.description = parse.getString(data.description);
+    product.description2 = parse.getString(data.description2);
     product.meta_description = parse.getString(data.meta_description);
     product.meta_title = parse.getString(data.meta_title);
     product.tags = parse.getArrayIfValid(data.tags) || [];
