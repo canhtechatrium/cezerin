@@ -1,6 +1,6 @@
 // config used by server side only
 
-const dbHost = process.env.DB_HOST || '127.0.0.1';
+const dbHost = process.env.DB_HOST || '172.31.16.215';
 const dbPort = process.env.DB_PORT || 27017;
 const dbName = process.env.DB_NAME || 'shop'
 const dbUser = process.env.DB_USER || '';
@@ -10,19 +10,19 @@ const dbUrl = `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 module.exports = {
   // used by Store (server side)
-  apiBaseUrl: `http://localhost:3001/api/v1`,
+  apiBaseUrl: `http://172.31.16.215:3001/api/v1`,
 
   // used by Store (server and client side)
-  ajaxBaseUrl: `http://localhost:3001/ajax`,
+  ajaxBaseUrl: `http://172.31.16.215:3001/ajax`,
 
   // Access-Control-Allow-Origin
-  storeBaseUrl: `http://localhost:3000`,
+  storeBaseUrl: `http://172.31.16.215:80`,
 
   // used by API
   adminLoginUrl: '/admin/login',
 
   apiListenPort: 3001,
-  storeListenPort: 3000,
+  storeListenPort: 80,
 
   // used by API
   mongodbServerUrl: dbUrl,
