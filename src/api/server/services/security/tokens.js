@@ -222,7 +222,7 @@ class SecurityTokensService {
     }
 
     if(ip === '::1'){
-      ip = 'localhost';
+      ip = '172.31.16.215';
     }
 
     return ip;

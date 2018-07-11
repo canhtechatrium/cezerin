@@ -45,5 +45,5 @@ app.get('*', pageRendering);
 
 const server = app.listen(settings.storeListenPort, () => {
   const serverAddress = server.address();
-  winston.info(`Store running at http://localhost:${serverAddress.port}`);
+  winston.info(`Store running at http://172.31.16.215:${serverAddress.port}`);
 });

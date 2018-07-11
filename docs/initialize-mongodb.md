@@ -52,7 +52,7 @@ db.emailSettings.insert({
 
 ```js
 db.settings.insert({
-  domain: 'http://localhost:3000',
+  domain: 'http://172.31.16.215:80',
   logo_file: 'logo.png',
   language: 'en',
   currency_code: 'VND',
